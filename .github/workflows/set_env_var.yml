@@ -1,4 +1,5 @@
 name: 'Set environment variables'
+on: [push]
 description: 'Configures environment variables for a workflow'
 inputs:
   varFilePath:
