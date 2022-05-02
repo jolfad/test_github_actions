@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-      - uses: actions/checkout@v2
-      
+        uses: actions/checkout@v2
+
       - name: Set Environment Variables
         if: startsWith( github.ref, 'refs/heads/main')
         uses: ./.github/workflows/
