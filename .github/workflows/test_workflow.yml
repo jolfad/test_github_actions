@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Set Environment Variables
         if: startsWith( github.ref, 'refs/heads/main')
-        uses: ./.github/workflows/action.yml
+        uses: ./.github/workflows/
         with:
           varFilePath: ./.github/variables.env
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
