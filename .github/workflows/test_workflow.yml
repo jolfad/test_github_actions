@@ -9,7 +9,7 @@ jobs:
 
       - name: Set Environment Variables
         if: startsWith( github.ref, 'refs/heads/main')
-        uses: ./.github/workflows/set_env_var.yml
+        uses: ./.github/workflows/actions
         with:
           varFilePath: ./.github/variables.env
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
