@@ -6,6 +6,7 @@ jobs:
     steps:
       - name: checkout
       - uses: actions/checkout@v2
+      
       - name: Set Environment Variables
         if: startsWith( github.ref, 'refs/heads/main')
         uses: ./.github/workflows/
